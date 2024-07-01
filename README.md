@@ -15,3 +15,4 @@ Clone this repo and run the following commands to install the dependencies and s
 - `npm run dev`
 
 Once you've opened your browser to the application, you can use the register link to create an account and view the seeded pizza orders."# pizzadominos_app" 
+"# pizzadominos_app" 
