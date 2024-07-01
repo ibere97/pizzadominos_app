@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -38,8 +39,8 @@ class PizzaFactory extends Factory
         $toppings = array_unique($toppings);
 
         return [
-            'id' => rand(1111111, 9999999),
-            'user_id' => rand(1, 10),
+            //'id' => $this->faker->unique()->numberBetween(1111111, 9999999),
+            'user_id' => User::factory(),
             'size' => ['Small', 'Medium', 'Large', 'Extra-Large'][rand(0, 3)],
             'crust' => ['Regular', 'Thin', 'Garlic'][rand(0, 2)],
             'status' => ['Ordered', 'Prepping', 'Baking', 'Checking', 'Ready'][rand(0, 4)],
